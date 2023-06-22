@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/please_select_the_event_you_have_participated_in_to_give_your_rating"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <CheckBox
+                android:id="@+id/music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onMusicCheckboxClicked"
+                android:text="@string/music"
+                android:textColor="#616161"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/music_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/dance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onDanceCheckboxClicked"
+                android:text="@string/dance"
+                android:textColor="#616161"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/dance_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onPlayCheckboxClicked"
+                android:text="@string/play"
+                android:textColor="#616161"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/play_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/fashion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onFashionCheckboxClicked"
+                android:text="@string/fashion"
+                android:textColor="#616161"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/fashion_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onFoodCheckboxClicked"
+                android:text="@string/food"
+                android:textColor="#616161"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/food_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:numStars="5"
+                android:saveEnabled="true"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            tools:ignore="RtlCompat" />
+
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="onClearPressed"
+            android:text="@string/clear"
+            android:textColor="@color/black" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            tools:ignore="RtlCompat" />
+
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/submit"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

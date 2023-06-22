@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Odyssey_Survey</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello">Hello!</string>
+    <string name="please_fill_the_below_details_to_give_feedback_for_odyssey">Please fill the below details to give feedback for Odyssey</string>
+    <string name="name">Name:</string>
+    <string name="role">Role:</string>
+    <string name="participant">Participant</string>
+    <string name="audience">Audience</string>
+    <string name="nextButton">Next</string>
+    <string name="please_select_the_event_you_have_participated_in_to_give_your_rating">Please select the event you have participated in to give your rating</string>
+    <string name="music">Music</string>
+    <string name="dance">Dance</string>
+    <string name="play">Play</string>
+    <string name="fashion">Fashion</string>
+    <string name="food">Food</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="submitted_details_are_as_follows">Submitted details are as follows-</string>
+    <string name="nameSubmitted">Name-</string>
+    <string name="roleSubmitted">Role-</string>
+    <string name="music_rating">Music Rating-</string>
+    <string name="dance_rating">Dance Rating-</string>
+    <string name="play_rating">Play Rating-</string>
+    <string name="fashion_rating">Fashion Rating-</string>
+    <string name="food_rating">Food Rating-</string>
+</resources>
