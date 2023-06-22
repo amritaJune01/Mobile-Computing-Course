@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WordDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/heading_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFD600"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Part of Speech: " />
+
+        <TextView
+            android:id="@+id/static_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry"
+            tools:text="This is some temp text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/static_synonym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFD600"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Synonym: " />
+
+        <TextView
+            android:id="@+id/synonym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry"
+            tools:text="This is some temp text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/static_antonym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFD600"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Antonyms: " />
+
+        <TextView
+            android:id="@+id/antonym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry"
+            tools:text="This is some temp text" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_details_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#616161"
+        android:padding="16dp"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:context=".MainActivity">
+
+
+            <TextView
+                android:id="@+id/geo_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Switch on the toggle button to align your phone to earth's frame of reference."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/dummytext"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center_horizontal"-->
+            <!--            android:gravity="center_horizontal"-->
+            <!--            android:textSize="16dp"-->
+            <!--            android:textStyle="bold" />-->
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/geo_toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="15dp" />
+
+            <TextView
+                android:id="@+id/step_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Step Count: 0"
+                android:textColor="#7802EE"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/displacement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Displacement: 0 m"
+                android:textColor="#EED502"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Direction: None"
+                android:textColor="#7802EE"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/lift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Lift Detected: "
+                android:textColor="#EED502"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+
+            <TextView
+                android:id="@+id/stairs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Stairs Detected: "
+                android:textColor="#7802EE"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/stride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="20dp"
+                android:text="Stride Length: "
+                android:textColor="#EED502"
+                android:textSize="17dp"
+                android:textStyle="italic|bold" />
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapView"
+                tilesource="Mapnik"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DictionaryApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_dictionary_app">Welcome to Dictionary App!</string>
+    <string name="please_type_the_word_you_want_to_search">Please type the word you want to search</string>
+    <string name="eg_hello">Eg: hello</string>
+    <string name="search">Search</string>
+    <string name="word_audio">word_audio</string>
+    <string name="word">word</string>
+</resources>
