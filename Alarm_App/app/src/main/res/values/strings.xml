@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alarm_App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alarm_1">Alarm 1:</string>
+    <string name="alarm_1_time">Alarm 1 not set!</string>
+    <string name="set_alarm_1">Set Alarm</string>
+    <string name="alarm_2">Alarm 2:</string>
+    <string name="alarm_2_time">Alarm 2 not set!</string>
+    <string name="set_alarm_2">Set Alarm</string>
+    <string name="start_service">Start Service</string>
+    <string name="end_service">End Service</string>
+</resources>
